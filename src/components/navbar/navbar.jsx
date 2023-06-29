@@ -1,3 +1,5 @@
+'use client';
+
 import Link from "next/link"
 
 const links = [
@@ -48,6 +50,7 @@ const Navbar = () => {
             >{link.title}</Link>
           )
         })}
+        <button onClick={() => console.log('logout')}>Logout</button>
       </div>
     </div>
   )
