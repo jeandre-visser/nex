@@ -18,5 +18,11 @@ a {
 }
 
 .container {
-  background: rgba(16, 16, 161, 0.767);
+  max-width: 1400px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

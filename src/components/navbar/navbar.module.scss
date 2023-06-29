@@ -1,0 +1,28 @@
+.container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
