@@ -1,6 +1,13 @@
 'use client';
 
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
+import styles from './footer.module.scss';
+import {
+  InstagramFilled,
+  FacebookFilled,
+  TwitterSquareFilled,
+  YoutubeFilled,
+} from '@ant-design/icons';
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
@@ -22,8 +29,16 @@ const Footer = () => {
     };
   }, []);
   return (
-    <div>©{currentYear} nex. All rights reserved.</div>
-  )
-}
+    <div className={styles.container}>
+      ©{currentYear} nex. All rights reserved.
+      <div className={styles.icon_container}>
+        <InstagramFilled />
+        <FacebookFilled />
+        <TwitterSquareFilled />
+        <YoutubeFilled />
+      </div>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;
